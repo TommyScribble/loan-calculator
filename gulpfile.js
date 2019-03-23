@@ -18,7 +18,7 @@ var src = {
     js: "src/js/*.js",
     scss: "src/styles/**/*.scss",
     css:  "src/styles/",
-    html: "src/*.html"
+    html: "*.html"
 };
 
 
@@ -31,8 +31,8 @@ reload();
         }   
     })
 
+    gulp.watch([src.html, src.scss, src.js]).on("change", reload); 
     gulp.watch(src.scss, ["sass"]);
-    gulp.watch([src.scss, src.js]).on("change", reload); 
 });
 
 
