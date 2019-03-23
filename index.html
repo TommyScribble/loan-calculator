@@ -2,25 +2,54 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Loan Calculator</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./styles/main.css">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Loan Calculator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
-        <h1>Loan Calculator</h1>
+    <main class="page-body">
+        <section class="loan-calculator">
+            <form class="loan-calculator__calculator">
+                <h1 class="title">Loan Calculator</h1>
+                <p class="subtitle"></p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                in culpa qui officia deserunt mollit anim id est laborum.
+                <div class="slide-container">
+                    <h4>Loan Amount</h4>
+                    <input type="range" min="200" max="10000" value="500" class="slider" id="loanAmount"><input type="number">
+                    <h4>Annual Interest</h4>
+                    <input type="range" min="1" max="35" value="12" class="slider" id="annualInterest"><input type="number">
+                    <h4>Repayent Period</h4>
+                    <input type="range" min="1" max="7" value="3" class="slider" id="repaymentPeriod"><input type="number">
+                    <button class="btn btn-dark"type="button">Calculate</button>
+                </div>
+            </form>
+            <div class="loan-calculator__results results">
+                <div class="results__chart"></div>
+                <div class="results__totals">
+                    <span class="monthly-payments">MonthlyPayments</span><span class="total"></span>
+                    <span class="monthly-payments">MonthlyPayments</span><span class="total"></span>
+                    <span class="monthly-payments">MonthlyPayments</span><span class="total"></span>
+                </div>
+                <button class="btn btn-light"type="button">Apply Now</button>
+            </div>
+        </section>
+    </main>
+    <script src="" async defer></script>
+</body>
 
-
-        jhfjjfh
-
-        <script src="" async defer></script>
-    </body>
 </html>
