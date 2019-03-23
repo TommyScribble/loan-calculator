@@ -1,0 +1,28 @@
+{
+  "name": "loan-calculator",
+  "version": "1.0.0",
+  "description": "A small loan calculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-tommy:TommyScribble/loan-calculator.git"
+  },
+  "author": "Tommy Scribble",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^9.5.0",
+    "browser-sync": "^2.26.3",
+    "bulma": "^0.7.4",
+    "cssnano": "^4.1.10",
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "postcss-import": "^12.0.1",
+    "precss": "^4.0.0"
+  }
+}
