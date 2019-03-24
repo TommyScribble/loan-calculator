@@ -83,16 +83,14 @@ p {
                         cursor: pointer;
                     }
                 }
-                .slider-input {
-                    appearance: none;
-                    border: none;
+                output.slider-input {
                     box-shadow: $box-shadow--4;
                     border-radius: 4px;
                     font-family: $karla-bold;
                     font-size: 15px;
-                    height: 36px;
                     width: 30%;
                     margin-left: 1em;
+                    padding: 0.4em;
                 }
                 .btn {
                     display: block;
