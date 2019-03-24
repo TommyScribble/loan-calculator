@@ -22,5 +22,4 @@ function drawChart() {
 
     var chart = new google.visualization.PieChart(document.getElementById('chart'));
     chart.draw(data, options);
-    console.log('CHART', chart)
 }
