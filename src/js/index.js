@@ -14,7 +14,7 @@ calculateInterest(loanAmount, annualInterest, repaymentPeriod) {
     var yearlyInterest = (loanAmount / 100 ) * annualInterest;
     var monthlyInterest = yearlyInterest / 12;
     var totalInterest = yearlyInterest * repaymentPeriod;
-    this.displayCalculation(totalInterest, 'js-total-interest');
+    this.displayCalculation(totalInterest.toFixed(2), 'js-total-interest');
     this.calculateMonthleyPayments(this.input.loanAmount.innerHTML, monthlyInterest, this.input.repaymentPeriod.innerHTML);
     this.calculateTotalPayments(this.input.loanAmount.innerHTML, totalInterest);
 }
@@ -22,12 +22,12 @@ calculateInterest(loanAmount, annualInterest, repaymentPeriod) {
 calculateMonthleyPayments(loanAmount, monthlyInterest, repaymentPeriod) {
     var loanPerMonth = loanAmount / repaymentPeriod / 12;
     var monthlypayment = loanPerMonth + monthlyInterest;
-    this.displayCalculation(monthlypayment, 'js-monthly-payment')
+    this.displayCalculation(monthlypayment.toFixed(2), 'js-monthly-payment')
 }
 
 calculateTotalPayments(loanAmount, totalInterest) {
     var totalPayments = +loanAmount + +totalInterest;
-    this.displayCalculation(totalPayments, 'js-total-payment')
+    this.displayCalculation(totalPayments.toFixed(2), 'js-total-payment')
 }
 
 
