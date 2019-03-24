@@ -4,6 +4,7 @@ class LoanCalculator {
         loanAmount: document.getElementsByClassName('js-valueLoan')[0],
         annualInterest:document.getElementsByClassName('js-valueInterest')[0],
         repaymentPeriod: document.getElementsByClassName('js-valueLoanPeriod')[0],
+        interest: document.getElementsByClassName('js-total-interest')[0]
     }    
 }
 
@@ -31,35 +32,35 @@ calculateTotalPayments(loanAmount, totalInterest) {
 
 
 collectData(inputID, outputID) {
-    //Collect data from form
+//Collect data from form
     var calculateButton = document.getElementsByClassName('js-calculate')[0];
-    
+
     var total;
-    
+
     calculateButton.addEventListener('click', () => {
         total = document.getElementsByClassName(`${inputID}`)[0].innerHTML;
         this.displayCalculation(total, outputID);
             this.calculateInterest(this.input.loanAmount.innerHTML, this.input.annualInterest.innerHTML, this.input.repaymentPeriod.innerHTML);
-        })
-    }
+    })
+}
     
     
-    displayCalculation(total, outputID) {
-        //Display the calculations
-        document.getElementsByClassName(`${outputID}`)[0].innerHTML= total;
-    }
+displayCalculation(total, outputID) {
+    //Display the calculations
+    document.getElementsByClassName(`${outputID}`)[0].innerHTML= total;
+}
     
-    updateInput(inputID, outputClass) {
-        //Update outputs with input from range slider
-        var slider = document.getElementById(`${inputID}`),
-            sliderOutput = document.getElementsByClassName(`${outputClass}`)[0];
+updateInput(inputID, outputClass) {
+    //Update outputs with input from range slider
+    var slider = document.getElementById(`${inputID}`),
+        sliderOutput = document.getElementsByClassName(`${outputClass}`)[0];
 
+    sliderOutput.innerHTML = slider.value;
+
+    slider.addEventListener('input', () => {
         sliderOutput.innerHTML = slider.value;
-
-        slider.addEventListener('input', () => {
-            sliderOutput.innerHTML = slider.value;
-        }, false);
-    }
+    }, false);
+}
 }
 
 const calculator = new LoanCalculator;
