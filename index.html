@@ -12,7 +12,10 @@
     <title>Loan Calculator</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="./src/js/index.js"></script>
+    <script type="text/javascript" src="./src/js/chart.js"></script>
 </head>
 
 <body>
@@ -23,33 +26,41 @@
         <section class="loan-calculator">
             <form class="loan-calculator__calculator">
                 <h1 class="title">Loan Calculator</h1>
-                <p class="subtitle"></p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                in culpa qui officia deserunt mollit anim id est laborum.
+                laboris nisi ut aliquip ex ea commodo consequat.</p>
+            
                 <div class="slide-container">
-                    <h4>Loan Amount</h4>
-                    <input type="range" min="200" max="10000" value="500" class="slider" id="loanAmount"><input type="number">
-                    <h4>Annual Interest</h4>
-                    <input type="range" min="1" max="35" value="12" class="slider" id="annualInterest"><input type="number">
-                    <h4>Repayent Period</h4>
-                    <input type="range" min="1" max="7" value="3" class="slider" id="repaymentPeriod"><input type="number">
-                    <button class="btn btn-dark"type="button">Calculate</button>
+                    <h4 class="slider-title">Loan Amount</h4>
+                    <input type="range" min="200" max="10000" value="500" class="slider" id="loanAmount"><input class="slider-input" type="number">
+                    <h4 class="slider-title">Annual Interest</h4>
+                    <input type="range" min="1" max="35" value="12" class="slider" id="annualInterest"><input class="slider-input" type="number">
+                    <h4 class="slider-title">Repayent Period</h4>
+                    <input type="range" min="1" max="7" value="3" class="slider" id="repaymentPeriod"><input class="slider-input" type="number">
+                    <button class="btn btn-dark" type="button">Calculate</button>
                 </div>
             </form>
             <div class="loan-calculator__results results">
-                <div class="results__chart"></div>
+                <h1 class="title">Your Loan</h1>
+                <div class="results__chart" id="chart"></div>
                 <div class="results__totals">
-                    <span class="monthly-payments">MonthlyPayments</span><span class="total"></span>
-                    <span class="monthly-payments">MonthlyPayments</span><span class="total"></span>
-                    <span class="monthly-payments">MonthlyPayments</span><span class="total"></span>
+                    <div class="total">
+                        <span class="label">Monthly Payments</span><span class="total"></span>
+                    </div>
+                    <div class="total">
+                        <span class="label">Loan Amount</span><span class="total"></span>
+                    </div>
+                    <div class="total">
+                        <span class="label">Total Payment</span><span class="total"></span>
+                    </div>
+                    <div class="total">
+                        <span class="label">Total Interest</span><span class="total"></span>
+                    </div>
                 </div>
                 <button class="btn btn-light"type="button">Apply Now</button>
             </div>
         </section>
     </main>
-    <script src="" async defer></script>
 </body>
 
 </html>

@@ -1,0 +1,30 @@
+//ALL button styles here
+
+.btn {
+    border: none;
+    border-radius: 4px;
+    font-family: $karla-reg;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 0.8em 2.4em;
+    transition: all .3s ease;
+    &.btn-dark {
+        background-color: $brand-color;
+        color: $white;
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: darken($brand-color, 10%)
+        }
+    }
+    &.btn-light {
+        background-color: $white;
+        color: $text-color;
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: darken($white, 10%)
+        }
+    }
+}

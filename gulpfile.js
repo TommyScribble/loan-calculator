@@ -31,8 +31,8 @@ reload();
         }   
     })
 
-    gulp.watch([src.html, src.scss, src.js]).on("change", reload); 
     gulp.watch(src.scss, ["sass"]);
+    gulp.watch([src.html, src.scss, src.js]).on("change", reload);
 });
 
 
@@ -49,12 +49,13 @@ gulp.task("sass", function() {
   ];
 
   return gulp
-    .src("scss/main.scss")
+    .src(src.scss)
     .pipe(plumber())
     .pipe(sourceMaps.init())
     .pipe(sass().on("error", sass.logError))
     .pipe(postcss(processors))
-    .pipe(gulp.dest(src.css));
+    .pipe(gulp.dest(src.css))
+    .pipe(browserSync.stream());
 });
 
 gulp.task("watch-sass", function() {
@@ -78,4 +79,4 @@ gulp.task("watch-sass", ["watch-sass"]);
 
 gulp.task("watch-js", ["watch-js"]);
 
-gulp.task("default", ["serve"]);
+gulp.task("default", ["sass", "serve"]);
