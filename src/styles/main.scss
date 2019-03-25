@@ -39,13 +39,13 @@ p {
 
     .loan-calculator {
         display: flex;
-        flex-wrap: wrap;
         background-color: $white;
         box-shadow: $box-shadow--4;
         padding: 1em;
         width: 70%;
         @media screen and (max-width: 696px) {
             width: 100%;
+            flex-wrap: wrap;
           }
         &__calculator {
             flex: 1 0 60%;
