@@ -39,7 +39,6 @@ collectData(inputID, outputID) {
 
     calculateButton.addEventListener('click', () => {
         total = document.getElementsByClassName(`${inputID}`)[0].innerHTML;
-        this.displayCalculation(total, outputID);
             this.calculateInterest(this.input.loanAmount.innerHTML, this.input.annualInterest.innerHTML, this.input.repaymentPeriod.innerHTML);
     })
 }
