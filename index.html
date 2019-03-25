@@ -31,11 +31,11 @@
             
                 <div class="slide-container">
                     <h4 class="slider-title">Loan Amount</h4>
-                    <input type="range" min="200" max="10000" value="500" class="slider" id="loanAmount"></input><output class="slider-input js-valueLoan" type="number"></output>
+                    <input type="range" min="200" max="10000" value="500" class="slider" id="loanAmount"></input><span>£</span><output class="slider-input js-valueLoan" type="number"></output>
                     <h4 class="slider-title">Annual Interest</h4>
-                    <input type="range" min="1" max="35" value="12" class="slider" id="annualInterest"></input><output class="slider-input js-valueInterest" type="number"></output>
+                    <input type="range" min="1" max="35" value="12" class="slider" id="annualInterest"></input><output class="slider-input js-valueInterest" type="number"></output><span>%</span>
                     <h4 class="slider-title">Repayent Period</h4>
-                    <input type="range" min="1" max="7" value="3" class="slider" id="repaymentPeriod"></input><output class="slider-input js-valueLoanPeriod" type="number"></output>
+                    <input type="range" min="1" max="7" value="3" class="slider" id="repaymentPeriod"></input><output class="slider-input js-valueLoanPeriod" type="number"></output><span>years</span>
                     <button class="btn btn-dark js-calculate" type="button">Calculate</button>
                 </div>
             </form>
@@ -44,16 +44,16 @@
                 <div class="results__chart" id="chart"></div>
                 <div class="results__totals">
                     <div class="total">
-                        <span class="label">Monthly Payments</span><span class="total js-monthly-payment"></span>
+                        <span class="label">Monthly Payments</span><span class="total__display js-monthly-payment"></span>
                     </div>
                     <div class="total">
-                        <span class="label">Loan Amount</span><span class="total js-total-loan"></span>
+                        <span class="label">Loan Amount</span><span class="total__display js-total-loan"></span>
                     </div>
                     <div class="total">
-                        <span class="label">Total Payment</span><span class="total js-total-payment"></span>
+                        <span class="label">Total Payment</span><span class="total__display js-total-payment"></span>
                     </div>
                     <div class="total">
-                        <span class="label">Total Interest</span><span class="total js-total-interest"></span>
+                        <span class="label">Total Interest</span><span class="total__display js-total-interest"></span>
                     </div>
                 </div>
                 <button class="btn btn-light"type="button">Apply Now</button>

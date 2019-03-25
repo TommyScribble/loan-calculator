@@ -114,11 +114,11 @@ p {
                     margin: 2em 0;
                     .total {
                         margin-bottom: 1em;
-
                         .label {
                         }
-                        .total {
+                        .total__display {
                             font-family: $karla-bold;
+                            float: right;
                         }
                     }
                 }

@@ -47,7 +47,7 @@ collectData(inputID, outputID) {
     
 displayCalculation(total, outputID) {
     //Display the calculations
-    document.getElementsByClassName(`${outputID}`)[0].innerHTML= total;
+    document.getElementsByClassName(`${outputID}`)[0].innerHTML= `£ ${total}`;
 }
     
 updateInput(inputID, outputClass) {
