@@ -156,6 +156,11 @@ p {
             @media screen and (max-width: 1026px) {
                 flex: 1 0 100%;
               }
+              .title {
+                  @media screen and (max-width: 696px) {
+                      font-size: 1.8em;
+                    }
+              }
             .results {
                 &__chart {
                     svg path {
