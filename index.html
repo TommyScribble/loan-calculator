@@ -31,16 +31,16 @@
                 <div class="slide-container">
                     <h4 class="slider-title">Loan Amount</h4>
                     <input class="slider" id="loanAmount" type="range" min="200" max="10000" value="500"></input>
-                    <span>£</span>
-                    <input class="slider-input js-valueLoan" type="number" min="200" max="10000" value="500"></input>
+                    <span class="symbol currency">£</span>
+                    <input class="slider-input loan js-valueLoan" type="number" min="200" max="10000" value="500"></input>
                     <h4 class="slider-title">Annual Interest</h4>
                     <input  class="slider" id="annualInterest" type="range" min="1" max="35" value="12"></input>
-                    <input class="slider-input js-valueInterest" type="number" min="1" max="35" value="12"></input>
-                    <span>%</span>
+                    <input class="slider-input interest js-valueInterest" type="number" min="1" max="35" value="12"></input>
+                    <span class="symbol">%</span>
                     <h4 class="slider-title">Repayent Period</h4>
                     <input class="slider" id="repaymentPeriod" type="range" min="1" max="7" value="3"></input>
-                    <input class="slider-input js-valueLoanPeriod" type="number" min="1" max="7" value="3"></input>
-                    <span>years</span>
+                    <input class="slider-input period js-valueLoanPeriod" type="number" min="1" max="7" value="3"></input>
+                    <span class="symbol">years</span>
                     <button class="btn btn-dark js-calculate" type="button">Calculate</button>
                 </div>
             </form>
