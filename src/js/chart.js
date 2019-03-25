@@ -24,7 +24,6 @@ calculateButton.addEventListener('click', () => {
         var options = {
             backgroundColor: 'transparent',
             chartArea: {'width': '100%', 'height': '100%'},
-            legend: 'none',
             pieSliceTextStyle: {
                 color: 'none',
             },
