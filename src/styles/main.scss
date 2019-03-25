@@ -56,6 +56,7 @@ p {
                     font-size: 14px;
                 }
                 .slider {
+                    position: relative;
                     appearance: none;
                     height: 18px;
                     width: 65%;
@@ -90,7 +91,7 @@ p {
                     font-size: 15px;
                     width: 15%;
                     margin-left: 27px;
-                    margin-right: 2px;
+                    margin-right: 2px; 
                     padding: 0.4em;
                     &.loan {
                         margin-left: 1px;
@@ -105,6 +106,17 @@ p {
                     font-size: 16px;
                     &.currency {
                         margin-left: 12px;
+                    }
+                }
+                .range {
+                    width: 65%;
+                    font-family: $karla-bold;
+                    font-size:0.7em;
+                    position: relative;
+                    bottom: 18px;
+                    .range--end {
+                        position: absolute;
+                        right: 0;
                     }
                 }
             }
