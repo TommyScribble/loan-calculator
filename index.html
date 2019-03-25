@@ -28,19 +28,24 @@
                 <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                 laboris nisi ut aliquip ex ea commodo consequat.</p>
-            
                 <div class="slide-container">
                     <h4 class="slider-title">Loan Amount</h4>
-                    <input type="range" min="200" max="10000" value="500" class="slider" id="loanAmount"></input><span>£</span><output class="slider-input js-valueLoan" type="number"></output>
+                    <input class="slider" id="loanAmount" type="range" min="200" max="10000" value="500"></input>
+                    <span>£</span>
+                    <input class="slider-input js-valueLoan" type="number" min="200" max="10000" value="500"></input>
                     <h4 class="slider-title">Annual Interest</h4>
-                    <input type="range" min="1" max="35" value="12" class="slider" id="annualInterest"></input><output class="slider-input js-valueInterest" type="number"></output><span>%</span>
+                    <input  class="slider" id="annualInterest" type="range" min="1" max="35" value="12"></input>
+                    <input class="slider-input js-valueInterest" type="number" min="1" max="35" value="12"></input>
+                    <span>%</span>
                     <h4 class="slider-title">Repayent Period</h4>
-                    <input type="range" min="1" max="7" value="3" class="slider" id="repaymentPeriod"></input><output class="slider-input js-valueLoanPeriod" type="number"></output><span>years</span>
+                    <input class="slider" id="repaymentPeriod" type="range" min="1" max="7" value="3"></input>
+                    <input class="slider-input js-valueLoanPeriod" type="number" min="1" max="7" value="3"></input>
+                    <span>years</span>
                     <button class="btn btn-dark js-calculate" type="button">Calculate</button>
                 </div>
             </form>
             <div class="loan-calculator__results results">
-                <h1 class="title">Your Loan</h1>
+                <h1 class="title js-title">Your Loan</h1>
                 <div class="results__chart" id="chart"></div>
                 <div class="results__totals">
                     <div class="total">
