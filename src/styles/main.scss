@@ -168,6 +168,9 @@ p {
                     svg path {
                         stroke-width: 0;
                     }
+                    @media screen and (max-width: 1026px) {
+                        display: none;
+                      }
                 }
                 &__totals {
                     font-family: $karla-reg;
