@@ -45,6 +45,8 @@ p {
         width: 70%;
         @media screen and (max-width: 696px) {
             width: 100%;
+          }
+        @media screen and (max-width: 1026px) {
             flex-wrap: wrap;
           }
         &__calculator {
