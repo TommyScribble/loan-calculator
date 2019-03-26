@@ -60,8 +60,11 @@ updateInput(inputID, outputClass) {
 
     sliderOutput.value = slider.value;
 
-    slider.addEventListener('input', () => {
-        sliderOutput.value = slider.value;
+    slider.addEventListener('input', (e) => {
+        sliderOutput.value = e.target.value;
+    }, false);
+    sliderOutput.addEventListener('input', (e) => {
+        slider.value = e.target.value;
     }, false);
 }
 }
